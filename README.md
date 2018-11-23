@@ -15,7 +15,7 @@ type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-exec = python /path/to/spotify/script -f '{artist}: {song}'
+exec = /usr/bin/python3 /path/to/spotify/script -f '{artist}: {song}'
 format-underline = #1db954
 ~~~
 
@@ -28,7 +28,7 @@ The argument "-t" is optional and sets the `trunlen`. It specifies the maximum l
 Override example:
 
 ~~~ ini
-exec = python /path/to/spotify/script -t 42
+exec = /usr/bin/python3 /path/to/spotify/script -t 42
 ~~~
 
 ##### Format
@@ -38,7 +38,7 @@ The argument "-f" is optional and sets the format. You can specify how to displa
 Override example:
 
 ~~~ ini
-exec = python /path/to/spotify/script -f '{play_pause} {song} - {artist}'
+exec = /usr/bin/python3 /path/to/spotify/script -f '{play_pause} {song} - {artist}'
 ~~~
 
 This would output "Lone Digger - Caravan Palace" in your polybar, instead of what is shown in the screenshot.
@@ -50,5 +50,5 @@ The argument "-p" is optional, and sets which unicode symbols to use for the sta
 Override example:
 
 ~~~ ini
-exec = python /path/to/spotify/script -p '[playing],[paused]'
+exec = /usr/bin/python3 /path/to/spotify/script -p '[playing],[paused]'
 ~~~
